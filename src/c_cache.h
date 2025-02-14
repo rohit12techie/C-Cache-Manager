@@ -39,7 +39,7 @@ typedef struct c_cache_manager {
     void (*destroy)(cache_t *cache);
 } c_cache_manager_t;
 
-c_cache_manager_t *global_cache_manager = NULL;
+extern c_cache_manager_t *global_cache_manager;
 
 c_cache_manager_t* get_cache_manager();
 void destroy_cache_manager();

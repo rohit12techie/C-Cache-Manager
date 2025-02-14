@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define MAX_CACHE_SIZE 10
 
-extern c_cache_manager_t *global_cache_manager;
+c_cache_manager_t *global_cache_manager;
 
 // Singleton cache manager initializer
 c_cache_manager_t* get_cache_manager() {
